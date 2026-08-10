@@ -17,7 +17,7 @@ with conn.cursor() as cur:
         (3, 'register', NOW())
     """)
     conn.commit()
-    print("✅ Добавлены тестовые данные")
+    print("Добавлены тестовые данные")
 
     # Проверяем
     cur.execute("SELECT * FROM user_logins")
